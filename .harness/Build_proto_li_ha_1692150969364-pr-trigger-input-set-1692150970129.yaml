@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_proto_li_ha_1692150969364-pr-trigger-input-set
+  identifier: Build_proto_li_ha_1692150969364prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_proto_li_ha_1692150969364
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
