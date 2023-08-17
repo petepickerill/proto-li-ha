@@ -8,5 +8,6 @@ CREATE TABLE public.actor (
 	CONSTRAINT actor_pkey PRIMARY KEY (actor_id)
 );
 
--- changeset ppickerill:add-phone-to-employees
--- ALTER TABLE integration.EMPLOYEES ADD PHONE_NUMBER varchar(15) NOT NULL DEFAULT "555-555-5555";
+-- changeset ppickerill:add-index-actor
+CREATE INDEX idx_actor_last_name ON public.actor USING btree (last_name);
+
